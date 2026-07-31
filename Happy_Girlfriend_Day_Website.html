@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Happy Girlfriend Day ❤️</title>
+<style>
+body{margin:0;font-family:Arial,sans-serif;background:linear-gradient(135deg,#ff4e8c,#ff9fb2);color:#fff;text-align:center;overflow-x:hidden}
+.card{max-width:900px;margin:30px auto;padding:30px;background:rgba(255,255,255,.15);border-radius:20px}
+.section{margin:25px 0;padding:20px;background:rgba(255,255,255,.08);border-radius:16px}
+button{padding:14px 28px;border:none;border-radius:30px;background:#ff4e8c;color:#fff;font-size:18px;cursor:pointer}
+#popup{display:none;position:fixed;inset:0;background:rgba(0,0,0,.7);justify-content:center;align-items:center}
+#popup>div{background:#ff8fab;padding:25px;border-radius:20px;max-width:520px}
+.heart{position:fixed;bottom:-20px;animation:up 6s linear forwards}
+@keyframes up{to{transform:translateY(-110vh);opacity:0}}
+</style>
+</head>
+<body>
+<audio id="bgMusic" loop>
+<source src="https://raw.githubusercontent.com/ank0809/Valentine/ef63e0e79e66cacbf8d548255e1b93cc955d5a32/rhnuma_raone_srk.mp3" type="audio/mpeg">
+</audio>
+<div class="card">
+<h1>Happy Girlfriend Day, Madam Ji ❤️🌸</h1>
+<p id="typing"></p>
+<button onclick="openPopup()">💝 A Special Letter For You 💝</button>
+
+<div class="section"><h2>❤️ Forever, Not Temporary</h2>
+<p>Madam Ji... ❤️🌸<br><br>
+I don't want temporary love... I want to marry you.<br><br>
+I want to annoy you every single day... Steal your white sauce pasta... your waffles... Hold your hand everywhere we go... Pull your cheeks just to see your cuteness... Call you beautiful even when you say, "Aaj to bilkul achi nhi lg rhi..." ❤️</p></div>
+
+<div class="section"><h2>🫂 My Safe Place</h2>
+<p>I want to be your safe place... The first person you call when you're happy... And the one you run to when life feels heavy... I want to make you smile after every argument... Kiss your forehead when you're overthinking... Wrap you in the warmest hug whenever words aren't enough... And remind you every single day how deeply you're loved. ❤️</p></div>
+
+<div class="section"><h2>☕ Our Future</h2>
+<p>Lazy Sunday mornings... Random late night drives... Endless chai dates... Cute selfies... Silly fights... Unexpected flowers... And a lifetime full of memories with you. ❤️</p></div>
+
+<div class="section"><h2>💍 Forever</h2>
+<p>One day, when our grandchildren ask "Dadu, when did you fall in love with Dadi?" I'll smile, hold your hand and say: "I never really fell in love with your Dadi... I woke up every single day and chose to love her a little more than yesterday." ❤️</p></div>
+
+<div class="section">
+<h2>❤️ Always</h2>
+<p>Dear Madam Ji ❤️<br><br>
+No matter what happens between us... I'll always love you and be with you. I'll never leave your side. In a world full of uncertainty, you are the one thing I'm completely sure about. I will never change my feelings for you. I love you always and foreverrrrrrrr. ❤️💞<br><br>
+I'll always love you for a lifetime. Even after a thousand arguments, I'll still choose us. You'll forever be my little baby, my sunshine, and my happiest reason to smile. I'll always be your biggest fan and strongest supporter. ❤️</p>
+</div>
+
+<h2>“You're my favourite person... my forever... my always... and the love of my entire life.” ❤️♾️</h2>
+</div>
+
+<div id="popup"><div>
+<h2>Happy Girlfriend Day ❤️</h2>
+<p>See your Grandma... She is my dearest treasure... the most beautiful chapter of my life, my greatest blessing, and the best decision I ever made. 🥹❤️</p>
+<button onclick="closePopup()">I Love You Forever ❤️</button>
+</div></div>
+
+<script>
+const msg="Happy Girlfriend Day, Madam Ji ❤️ Today is another chance to remind you that you'll always be my favourite person, my safest place and my forever. 🌸";
+let i=0;function t(){if(i<msg.length){typing.innerHTML+=msg.charAt(i++);setTimeout(t,40)}};t();
+function openPopup(){popup.style.display='flex';bgMusic.play().catch(()=>{});}
+function closePopup(){popup.style.display='none';}
+setInterval(()=>{let h=document.createElement('div');h.className='heart';h.innerHTML=Math.random()>.5?'❤️':'💖';h.style.left=Math.random()*100+'vw';document.body.appendChild(h);setTimeout(()=>h.remove(),6000)},350);
+</script>
+</body></html>
